@@ -30,8 +30,9 @@ section {
     transform: translateX(0);
 }
 
-@media(prefers-reduced-motion) {
+/* для користувачів в яких ОС налаштований на знижену кількість анімацій */
+/* @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
     }
-}
+} */
