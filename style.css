@@ -71,3 +71,101 @@ section {
     transition: opacity 200ms;
     z-index: 2;
 }
+
+.cardEstate {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imgEst {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    border-radius: 15px;
+    background-image: url(./image/pexels-binyamin-mellish-106399.jpg);
+    background-size: cover;
+}
+
+.imgEst::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #131316;
+}
+
+.imgEst::after {
+    content: '';
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #131316;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: #232949;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+}
+
+.price {
+    position: absolute;
+    top: -80px;
+    width: 50%;
+    height: 80px;
+    background-color: #232949;
+    border-top: 10px solid #131316;
+    border-right: 10px solid #131316;
+    border-top-right-radius: 20px;
+}
+
+.price::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: -10px -10px 0 #131316;
+}
+
+.price::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    right: -20px;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #232949;
+}
+
+.price a {
+    position: relative;
+    background-color: #fff;
+    margin: 15px 15px;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 7px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
